@@ -35,20 +35,54 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-footer .fat-footer {
+/* Ogólne style dla fat footera */
+.fat-footer {
     background-color: #333;
     color: white;
     padding: 2em;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1em;
 }
 
+.footer-section {
+    flex: 1 1 200px;
+    margin: 0.5em 0;
+}
+
+.footer-section h4 {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5em;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #ddd;
+}
+
+
 /* CSS Efekty */
-.aktualnosci article {
+/* .aktualnosci article {
     transition: transform 0.3s ease;
 }
 
 .aktualnosci article:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
+} */
