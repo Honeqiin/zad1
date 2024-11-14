@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gitary</title>
+    <title>Stronka</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Moja Strona Domowa</h1>
-        <nav>
+        <div class="title-container">
+        <h1>カロリナと日本語を勉強しましょう！</h1>
+        <h2>nie wiem co tu dac jeszcze</h2>
+        </div>
+        <nav class = "main-nav">
             <ul>
                 <li><a href="index.html">Strona Główna</a></li>
                 <li><a href="oMnie.html">O mnie</a></li>
@@ -17,13 +20,33 @@
             </ul>
         </nav>
     </header>
+    
     <main>
-        <h2>Gitary</h2>
-        <ul>
-            <li>Gitara 1</li>
-            <li>Gitara 2</li>
-            <li>Gitara 3</li>
-        </ul>
+        <section class="o-mnie">
+            <div class="o-mnie-content">
+                <!-- Obraz po lewej stronie -->
+                <img src="woman.jpg" alt="Zdjęcie autora" class="o-mnie-zdjecie">
+                
+                <!-- Tekst po prawej stronie -->
+                <div class="o-mnie-tekst">
+                    <p>Cześć! Nazywam się Jan Kowalski i jestem pasjonatem technologii oraz podróży. Na co dzień pracuję jako programista, a w wolnych chwilach lubię odkrywać nowe miejsca, poznawać nowe kultury i uczyć się języków.</p>
+                    
+                    <h3>Moje zainteresowania:</h3>
+                    <ul>
+                        <li>Programowanie - uwielbiam tworzyć aplikacje, które rozwiązują realne problemy.</li>
+                        <li>Podróże - odwiedziłem już ponad 15 krajów i mam nadzieję na kolejne przygody!</li>
+                        <li>Kultura japońska - interesuję się językiem, kuchnią i sztuką japońską.</li>
+                    </ul>
+                    
+                    <h3>Ulubione cytaty:</h3>
+                    <ul>
+                        <li>"Nie ma rzeczy niemożliwych, są tylko takie, które wymagają więcej czasu." – nieznany autor</li>
+                        <li>"Sukces to suma małych wysiłków powtarzanych dzień po dniu." – Robert Collier</li>
+                        <li>"Podróż tysiąca mil zaczyna się od jednego kroku." – Laozi</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="fat-footer">
@@ -31,9 +54,8 @@
                 <h4>Nawigacja</h4>
                 <ul>
                     <li><a href="index.html">Strona Główna</a></li>
-                    <li><a href="gitary.html">Gitary</a></li>
-                    <li><a href="wzmacniacze.html">Wzmacniacze</a></li>
-                    <li><a href="formularz.html">Formularz</a></li>
+                    <li><a href="oMnie.html">O mnie</a></li>
+                    <li><a href="formularzKontaktowy.html">Formularz Kontaktowy</a></li>
                 </ul>
             </div>
             <div class="footer-section">
@@ -42,14 +64,13 @@
                     <li><a href="#">O Projekcie</a></li>
                     <li><a href="#">Nasz Zespół</a></li>
                     <li><a href="#">Polityka Prywatności</a></li>
-                    <li><a href="#">Regulamin</a></li>
                 </ul>
             </div>
             <div class="footer-section">
                 <h4>Kontakt</h4>
-                <p>Email: kontakt@mojastrona.pl</p>
-                <p>Telefon: +48 123 456 789</p>
-                <p>Adres: Ul. Przykładowa 1, 00-000 Miasto</p>
+                <p>Imie i nazwisko: Karolina Częstochowska</p>
+                <p>E-mail: karolina.czestochowska@student.put.poznan.pl</p>
+                <p>Nr. Albumu: 158006</p>
             </div>
         </div>
     </footer>
