@@ -51,7 +51,6 @@ header {
     animation: fadeIn 0.5s ease-out;
 }
 
-/* Animacja wyblaknięcia */
 @keyframes fadeIn {
     from {
         background-color: rgba(255, 255, 255, 0);
@@ -62,10 +61,6 @@ header {
         color: #84abff;
     }
 }
-
-
-
-
 
 main {
     padding: 1em;
