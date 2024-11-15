@@ -12,11 +12,11 @@ header {
     padding: 1em 0;
     text-align: center;
 }
-.title h2 {
+#title h2 {
     font-size: 15px;
 }
 
-.title h1, .title h2 {
+#title h1, .title h2 {
     margin: 5px;
 }
 
@@ -33,15 +33,38 @@ header {
 }
 
 
-.mainNav ul li a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
 .mainNav ul li a:hover {
     color: #ddd;
 }
+
+.mainNav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.mainNav ul li a.active {
+    background-color: white;
+    color: #84abff;
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* Animacja wyblaknięcia */
+@keyframes fadeIn {
+    from {
+        background-color: rgba(255, 255, 255, 0);
+        color: rgba(132, 171, 255, 0);
+    }
+    to {
+        background-color: white;
+        color: #84abff;
+    }
+}
+
+
+
 
 
 main {
@@ -79,6 +102,7 @@ main {
 }
 
 
+
 .postText, .text {
     flex: 1; 
 }
@@ -111,7 +135,23 @@ main {
     max-width: 200px;
     border-radius: 5px;
     flex-shrink: 0; 
+    position: relative;
+    height: 200px;
+    object-fit: cover;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    cursor: pointer;
 }
+
+.aboutMePhoto:hover {
+    transform: scale(1.1);
+}
+
+
+.aboutMePhoto:hover::after {
+    opacity: 1;
+}
+
 
 .fatFooter {
     background-color: #84abff;
@@ -123,10 +163,6 @@ main {
     gap: 1em;
 }
 
-.footerSection {
-    flex: 1 1 200px;
-    margin: 0.5em 0;
-}
 
 .footerSection h4 {
     font-size: 1.2em;
@@ -138,10 +174,10 @@ main {
     padding: 0;
     margin: 0;
 }
-/* 
-.footer-section ul li {
-    margin-bottom: 0.5em;
-} */
+
+.footerSection ul li {
+    padding-bottom: 0.4em;
+}
 
 .footerSection ul li a {
     color: white;
